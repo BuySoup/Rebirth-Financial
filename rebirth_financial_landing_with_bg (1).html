@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rebirth Financial - Veterans Life Insurance</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('background-rebirth-financial.png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .form-container {
+      background-color: rgba(255, 255, 255, 0.95);
+      color: #333;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #1f2937;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 25px;
+      width: 100%;
+      padding: 15px;
+      background-color: #1d4ed8;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2563eb;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="form-container">
+      <h1>Rebirth Financial</h1>
+      <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+        <label for="name">Full Name</label>
+        <input type="text" name="Name" required />
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="Date of Birth" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" name="Email" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="Phone" required />
+
+        <label for="military">Military Status</label>
+        <select name="Military Status" required>
+          <option value="">Select one</option>
+          <option>Active Duty</option>
+          <option>Veteran</option>
+          <option>Retired</option>
+          <option>Reservist</option>
+        </select>
+
+        <label for="beneficiary">Beneficiary Name</label>
+        <input type="text" name="Beneficiary" required />
+
+        <label for="coverage">Desired Coverage Amount</label>
+        <input type="text" name="Coverage Amount" required />
+
+        <label for="budget">Monthly Budget</label>
+        <input type="text" name="Budget" required />
+
+        <label for="contact">Would you like to set an appointment or have me call you?</label>
+        <select name="Contact Preference" required>
+          <option value="">Select one</option>
+          <option>Set an Appointment</option>
+          <option>Call Me</option>
+        </select>
+
+        <label for="notes">Additional Info</label>
+        <textarea name="Notes" rows="4" placeholder="Any medical conditions, service branch, etc."></textarea>
+
+        <button type="submit">Submit Application</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
